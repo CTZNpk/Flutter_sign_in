@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+class Loading extends StatelessWidget {
+  const Loading({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final myTheme = Theme.of(context);
+    return Container(
+      color: myTheme.colorScheme.background,
+      child: Center(
+        child: SpinKitFoldingCube(
+          color: myTheme.colorScheme.primary,
+          size: 50.0,
+        ),
+      ),
+    );
+  }
+}
